@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\JAMES\\Desktop\\Curso-Balta-IO\\Acesso-a-dados-Dapper\\ADO\\ADO.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\JAMES\\Desktop\\Curso-Balta-IO\\Acesso-a-dados-Dapper\\ADO\\ADO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JAMES\\Desktop\\Curso-Balta-IO\\Acesso-a-dados-Dapper\\ADO\\ADO.csproj",
+        "projectName": "ADO",
+        "projectPath": "C:\\Users\\JAMES\\Desktop\\Curso-Balta-IO\\Acesso-a-dados-Dapper\\ADO\\ADO.csproj",
+        "packagesPath": "C:\\Users\\JAMES\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JAMES\\Desktop\\Curso-Balta-IO\\Acesso-a-dados-Dapper\\ADO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\JAMES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
