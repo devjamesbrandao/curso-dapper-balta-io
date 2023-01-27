@@ -356,19 +356,28 @@ namespace Dapper_intermediario
 
         }
 
-        static void Like(SqlConnection connection, string term)
+        // 1º Forma
+        static void LikeExample1(SqlConnection connection, string search)
         {
-            var query = @"SELECT * FROM [Course] WHERE [Title] LIKE @exp";
+            var query = @"SELECT * FROM [Course] WHERE [Title] LIKE @search";
 
-            var items = connection.Query<Course>(query, new
-            {
-                exp = $"%{term}%"
-            });
+            var course = connection.QueryFirstOrDefault<Course>(query, new
+                {
+                    search = $"%{search}%"
+                }
+            );
 
-            foreach (var item in items)
-            {
-                Console.WriteLine(item.Title);
-            }
+            Console.WriteLine(course.Title);
+        }
+
+        // 2º Forma
+        static void LikeExample2(SqlConnection connection, string search)
+        {
+            var query = @"SELECT * FROM [Course] WHERE [Title] LIKE CONCAT('%', @search, '%')";
+
+            var course = connection.QueryFirstOrDefault<Course>(query, new { search });
+
+            Console.WriteLine(course.Title);
         }
 
         static void Transaction(SqlConnection connection)
